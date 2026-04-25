@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "Norse";
+  src:
+    local("Norse"),
+    url("./norse/Norse.otf") format("opentype"),
+    url("./norse/Norsebold.otf") format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1400px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.container-left {
+  width: 45%;
+  height: 100%;
+  background-image: url(./img/anca-gabriela-zosin.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: left;
+  position: relative;
+}
+
+.container-left .logo {
+  width: 50%;
+  height: 100%;
+}
+.container-left .logo img {
+  width: 100%;
+  height: 300px;
+  margin-top: 150px;
+  margin-left: 10px;
+}
+
+.container-left .back {
+  background-color: rgba(12, 7, 7, 0.1);
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 150px;
+  left: 0;
+}
+
+.back h1 {
+  text-align: center;
+  color: white;
+  font-family:
+    "Norse", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 100px;
+  margin-left: 120px;
+  font-size: 5rem;
+}
+
+/* right part of form*/
+
+.container-right {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-right .area-form {
+  align-self: center;
+  margin-top: 10%;
+  width: 100%;
+  margin-left: 8%;
+}
+
+#user_name,
+#last-name,
+#email,
+#password,
+#repeat-password {
+  width: 95%;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid lightblue;
+  margin-top: 6px;
+}
+
+button {
+  width: 25%;
+  height: 50px;
+  margin-top: 10px;
+  color: white;
+  background-color: rgb(54, 54, 201);
+  border-radius: 10px;
+  box-shadow: 0px 1px 2px 2px rgb(78, 69, 69);
+  margin-top: 5%;
+}
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: 0px 0px 1px 1px rgb(78, 69, 69);
+}
+
+#password:valid,
+#repeat-password:valid {
+  border-color: green;
+}
+
+#password:invalid,
+#repeat-password:invalid {
+  border-color: rgb(233, 25, 25);
+}
+
+#user_name,
+#last-name,
+#email {
+  border-color: rgb(16, 126, 177);
+}
+
+h4 {
+  margin-top: 20%;
+  margin-left: 8%;
+  font-size: 25px;
+  text-align: left;
+  font-weight: 500;
+}
+
+h3 {
+  margin-left: 8%;
+  margin-top: 10%;
+  font-size: 25px;
+  text-align: left;
+}
+
+p,
+a {
+  margin-top: 5%;
+}
+
+a {
+  color: green;
+}
+
+.container-left p {
+  position: absolute;
+  bottom: 0;
+  left: 60%;
+  color: white;
+}
