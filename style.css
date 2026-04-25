@@ -14,7 +14,7 @@
 
 body {
   max-width: 1400px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -22,7 +22,7 @@ body {
 .container {
   display: flex;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .container-left {
   width: 45%;
